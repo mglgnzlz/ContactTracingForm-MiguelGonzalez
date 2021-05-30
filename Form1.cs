@@ -19,7 +19,12 @@ namespace ContactTracingForm_MiguelGonzalez
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("The form will now proceed to the questions part");
+            MessageBox.Show("The form will now proceed to the questions part.");
+        }
+
+        private void ResetButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("The form will now reset.");
         }
     }
 }
