@@ -17,5 +17,9 @@ namespace ContactTracingForm_MiguelGonzalez
             InitializeComponent();
         }
 
+        private void ConfirmButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("The form will now proceed to the questions part");
+        }
     }
 }
