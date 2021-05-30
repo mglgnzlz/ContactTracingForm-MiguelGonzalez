@@ -19,7 +19,9 @@ namespace ContactTracingForm_MiguelGonzalez
 
         string LNTb_Text,
                FNTb_Text,
-               MNTb_Text;
+               MNTb_Text,
+               HATb_Text,
+               CNTb_Text;
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
@@ -29,12 +31,23 @@ namespace ContactTracingForm_MiguelGonzalez
         private void ResetButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("The form will now reset.");
+            ResetForm_Disp();
         }
 
         private void LastName_TextBox_TextChanged(object sender, EventArgs e)
         {
            LNTb_Text = LastName_TextBox.Text;
            ChangeName_Disp();
+        }
+
+        private void ContactNumber_TextBox_TextChanged(object sender, EventArgs e)
+        {
+            CNTb_Text = ContactNumber_TextBox.Text;
+        }
+
+        private void HomeAddress_TextBox_TextChanged(object sender, EventArgs e)
+        {
+            HATb_Text = HomeAddress_TextBox.Text;
         }
 
         private void FirstName_TextBox_TextChanged(object sender, EventArgs e)
@@ -51,7 +64,17 @@ namespace ContactTracingForm_MiguelGonzalez
 
         public void ChangeName_Disp ()
         {
-            NameDisp_TB.Text = LNTb_Text + "," + FNTb_Text + "," + MNTb_Text;
+            NameDisp_TB.Text = LNTb_Text + ", " + FNTb_Text + ", " + MNTb_Text;
+        }
+
+        public void ResetForm_Disp ()
+        {
+            MiddleName_TextBox.Text = "";
+            FirstName_TextBox.Text = "";
+            LastName_TextBox.Text = "";
+            HomeAddress_TextBox.Text = " ";
+            ContactNumber_TextBox.Text = "";
+            MessageBox.Show("The form is now reset!");
         }
     }
 }

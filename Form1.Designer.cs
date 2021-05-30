@@ -102,7 +102,8 @@ namespace ContactTracingForm_MiguelGonzalez
             this.MiddleName_TextBox.Location = new System.Drawing.Point(109, 166);
             this.MiddleName_TextBox.Name = "MiddleName_TextBox";
             this.MiddleName_TextBox.Size = new System.Drawing.Size(213, 23);
-            this.MiddleName_TextBox.TabIndex = 7;
+            this.MiddleName_TextBox.TabIndex = 6;
+            this.MiddleName_TextBox.TextChanged += new System.EventHandler(this.MiddleName_TextBox_TextChanged);
             // 
             // ContactNumber
             // 
@@ -119,6 +120,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.ContactNumber_TextBox.Name = "ContactNumber_TextBox";
             this.ContactNumber_TextBox.Size = new System.Drawing.Size(213, 23);
             this.ContactNumber_TextBox.TabIndex = 9;
+            this.ContactNumber_TextBox.TextChanged += new System.EventHandler(this.ContactNumber_TextBox_TextChanged);
             // 
             // HomeAddress
             // 
@@ -135,6 +137,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.HomeAddress_TextBox.Name = "HomeAddress_TextBox";
             this.HomeAddress_TextBox.Size = new System.Drawing.Size(213, 23);
             this.HomeAddress_TextBox.TabIndex = 11;
+            this.HomeAddress_TextBox.TextChanged += new System.EventHandler(this.HomeAddress_TextBox_TextChanged);
             // 
             // ConfirmButton
             // 
@@ -158,11 +161,11 @@ namespace ContactTracingForm_MiguelGonzalez
             // 
             // NameDisp_TB
             // 
+            this.NameDisp_TB.Enabled = false;
             this.NameDisp_TB.Location = new System.Drawing.Point(61, 66);
             this.NameDisp_TB.Name = "NameDisp_TB";
             this.NameDisp_TB.Size = new System.Drawing.Size(261, 23);
             this.NameDisp_TB.TabIndex = 14;
-            this.NameDisp_TB.Enabled = false;
             // 
             // Form1
             // 
