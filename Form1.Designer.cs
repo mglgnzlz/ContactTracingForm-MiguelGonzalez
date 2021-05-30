@@ -30,7 +30,6 @@ namespace ContactTracingForm_MiguelGonzalez
         private void InitializeComponent()
         {
             this.Name_Label = new System.Windows.Forms.Label();
-            this.Name_Display = new System.Windows.Forms.Label();
             this.LastName = new System.Windows.Forms.Label();
             this.LastName_TextBox = new System.Windows.Forms.TextBox();
             this.FirstName = new System.Windows.Forms.Label();
@@ -43,6 +42,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.HomeAddress_TextBox = new System.Windows.Forms.TextBox();
             this.ConfirmButton = new System.Windows.Forms.Button();
             this.ResetButton = new System.Windows.Forms.Button();
+            this.NameDisp_TB = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Name_Label
@@ -53,15 +53,6 @@ namespace ContactTracingForm_MiguelGonzalez
             this.Name_Label.Size = new System.Drawing.Size(42, 15);
             this.Name_Label.TabIndex = 0;
             this.Name_Label.Text = "Name:";
-            // 
-            // Name_Display
-            // 
-            this.Name_Display.AutoSize = true;
-            this.Name_Display.Location = new System.Drawing.Point(61, 74);
-            this.Name_Display.Name = "Name_Display";
-            this.Name_Display.Size = new System.Drawing.Size(12, 15);
-            this.Name_Display.TabIndex = 1;
-            this.Name_Display.Text = "-";
             // 
             // LastName
             // 
@@ -78,6 +69,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.LastName_TextBox.Name = "LastName_TextBox";
             this.LastName_TextBox.Size = new System.Drawing.Size(213, 23);
             this.LastName_TextBox.TabIndex = 3;
+            this.LastName_TextBox.TextChanged += new System.EventHandler(this.LastName_TextBox_TextChanged);
             // 
             // FirstName
             // 
@@ -94,6 +86,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.FirstName_TextBox.Name = "FirstName_TextBox";
             this.FirstName_TextBox.Size = new System.Drawing.Size(213, 23);
             this.FirstName_TextBox.TabIndex = 5;
+            this.FirstName_TextBox.TextChanged += new System.EventHandler(this.FirstName_TextBox_TextChanged);
             // 
             // MiddleName
             // 
@@ -163,11 +156,20 @@ namespace ContactTracingForm_MiguelGonzalez
             this.ResetButton.UseVisualStyleBackColor = true;
             this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
+            // NameDisp_TB
+            // 
+            this.NameDisp_TB.Location = new System.Drawing.Point(61, 66);
+            this.NameDisp_TB.Name = "NameDisp_TB";
+            this.NameDisp_TB.Size = new System.Drawing.Size(261, 23);
+            this.NameDisp_TB.TabIndex = 14;
+            this.NameDisp_TB.Enabled = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(366, 390);
+            this.Controls.Add(this.NameDisp_TB);
             this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.ConfirmButton);
             this.Controls.Add(this.HomeAddress_TextBox);
@@ -180,7 +182,6 @@ namespace ContactTracingForm_MiguelGonzalez
             this.Controls.Add(this.FirstName);
             this.Controls.Add(this.LastName_TextBox);
             this.Controls.Add(this.LastName);
-            this.Controls.Add(this.Name_Display);
             this.Controls.Add(this.Name_Label);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -192,7 +193,6 @@ namespace ContactTracingForm_MiguelGonzalez
         #endregion
 
         private System.Windows.Forms.Label Name_Label;
-        private System.Windows.Forms.Label Name_Display;
         private System.Windows.Forms.Label LastName;
         private System.Windows.Forms.TextBox LastName_TextBox;
         private System.Windows.Forms.Label FirstName;
@@ -205,6 +205,7 @@ namespace ContactTracingForm_MiguelGonzalez
         private System.Windows.Forms.TextBox HomeAddress_TextBox;
         private System.Windows.Forms.Button ConfirmButton;
         private System.Windows.Forms.Button ResetButton;
+        private System.Windows.Forms.TextBox NameDisp_TB;
     }
 }
 
