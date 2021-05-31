@@ -29,17 +29,6 @@ namespace ContactTracingForm_MiguelGonzalez
            LNTb_Text = LastName_TextBox.Text;
            ChangeName_Disp();
         }
-
-        private void ContactNumber_TextBox_TextChanged(object sender, EventArgs e)
-        {
-            CNTb_Text = ContactNumber_TextBox.Text;
-        }
-
-        private void HomeAddress_TextBox_TextChanged(object sender, EventArgs e)
-        {
-            HATb_Text = HomeAddress_TextBox.Text;
-        }
-
         private void FirstName_TextBox_TextChanged(object sender, EventArgs e)
         {
             FNTb_Text = FirstName_TextBox.Text;
@@ -51,6 +40,18 @@ namespace ContactTracingForm_MiguelGonzalez
             MNTb_Text = MiddleName_TextBox.Text;
             ChangeName_Disp();
         }
+
+        private void ContactNumber_TextBox_TextChanged(object sender, EventArgs e)
+        {
+            CNTb_Text = ContactNumber_TextBox.Text;
+        }
+
+        private void HomeAddress_TextBox_TextChanged(object sender, EventArgs e)
+        {
+            HATb_Text = HomeAddress_TextBox.Text;
+        }
+
+
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("The form will now proceed to the next part.");

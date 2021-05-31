@@ -64,6 +64,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.AgeTextBox.Name = "AgeTextBox";
             this.AgeTextBox.Size = new System.Drawing.Size(31, 23);
             this.AgeTextBox.TabIndex = 1;
+            this.AgeTextBox.TextChanged += new System.EventHandler(this.AgeTextBox_TextChanged);
             // 
             // BirthdayLabel
             // 
@@ -80,6 +81,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.BirthdayTextBox.Name = "BirthdayTextBox";
             this.BirthdayTextBox.Size = new System.Drawing.Size(54, 23);
             this.BirthdayTextBox.TabIndex = 3;
+            this.BirthdayTextBox.TextChanged += new System.EventHandler(this.BirthdayTextBox_TextChanged);
             // 
             // Question1Box
             // 
@@ -98,6 +100,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.Q1_TextBox.Name = "Q1_TextBox";
             this.Q1_TextBox.Size = new System.Drawing.Size(304, 23);
             this.Q1_TextBox.TabIndex = 1;
+            this.Q1_TextBox.TextChanged += new System.EventHandler(this.Q1_TextBox_TextChanged);
             // 
             // Q1_Label
             // 
@@ -125,6 +128,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.Q2_TextBox.Name = "Q2_TextBox";
             this.Q2_TextBox.Size = new System.Drawing.Size(304, 23);
             this.Q2_TextBox.TabIndex = 1;
+            this.Q2_TextBox.TextChanged += new System.EventHandler(this.Q2_TextBox_TextChanged);
             // 
             // Q2_Label
             // 
@@ -152,6 +156,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.Q3_TextBox.Name = "Q3_TextBox";
             this.Q3_TextBox.Size = new System.Drawing.Size(304, 23);
             this.Q3_TextBox.TabIndex = 1;
+            this.Q3_TextBox.TextChanged += new System.EventHandler(this.Q3_TextBox_TextChanged);
             // 
             // Q3_Label
             // 
@@ -160,8 +165,8 @@ namespace ContactTracingForm_MiguelGonzalez
             this.Q3_Label.Name = "Q3_Label";
             this.Q3_Label.Size = new System.Drawing.Size(307, 30);
             this.Q3_Label.TabIndex = 0;
-            this.Q3_Label.Text = "Have you experienced any symptoms of COVID recently?\r\n" +
-                                  "If yes, please state the symptoms below.";
+            this.Q3_Label.Text = "Have you experienced any symptoms of COVID recently?\r\nIf yes, please state the sy" +
+    "mptoms below.";
             // 
             // SubmitButton
             // 
