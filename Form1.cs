@@ -74,11 +74,11 @@ namespace ContactTracingForm_MiguelGonzalez
 
         public void ResetForm_Disp ()
         {
-            MiddleName_TextBox.Text = "";
-            FirstName_TextBox.Text = "";
-            LastName_TextBox.Text = "";
-            HomeAddress_TextBox.Text = "";
-            ContactNumber_TextBox.Text = "";
+            MNTb_Text = "";
+            FNTb_Text = "";
+            LNTb_Text = "";
+            HATb_Text = "";
+            CNTb_Text = "";
             MessageBox.Show("The form is now reset!");
         }
 

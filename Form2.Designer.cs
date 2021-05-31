@@ -186,6 +186,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.ResetForm2.TabIndex = 8;
             this.ResetForm2.Text = "Reset Form";
             this.ResetForm2.UseVisualStyleBackColor = true;
+            this.ResetForm2.Click += new System.EventHandler(this.ResetForm2_Click);
             // 
             // Form2
             // 

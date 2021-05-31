@@ -50,6 +50,12 @@ namespace ContactTracingForm_MiguelGonzalez
         private void SubmitButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Your response has been recorded! Thank you for answering!");
+            Application.Exit();
         }
+        private void ResetForm2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("The form will now reset.");
+        }
+
     }
 }
