@@ -54,7 +54,19 @@ namespace ContactTracingForm_MiguelGonzalez
         }
         private void ResetForm2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("The form will now reset.");
+            MessageBox.Show("This form will now reset.");
+            ResetForm_Disp();
+        }
+
+        public void ResetForm_Disp()
+        {
+            Age_TB = "";
+            Birthday_TB = "";
+            Q1_TB = "";
+            Q2_TB = "";
+            Q3_TB = "";
+            MessageBox.Show("The form is now reset!");
+
         }
 
     }
