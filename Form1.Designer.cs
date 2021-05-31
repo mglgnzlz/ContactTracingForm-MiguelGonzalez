@@ -187,7 +187,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.Controls.Add(this.LastName);
             this.Controls.Add(this.Name_Label);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "COVID Contact Tracing Form";
             this.ResumeLayout(false);
             this.PerformLayout();
 
