@@ -160,9 +160,8 @@ namespace ContactTracingForm_MiguelGonzalez
             this.Q3_Label.Name = "Q3_Label";
             this.Q3_Label.Size = new System.Drawing.Size(307, 30);
             this.Q3_Label.TabIndex = 0;
-            this.Q3_Label.Text = "Have you experienced any symptoms of COVID recently?\r\nIf yes, please state the sy" +
-    "mptoms below.";
-            this.Q3_Label.Click += new System.EventHandler(this.label1_Click);
+            this.Q3_Label.Text = "Have you experienced any symptoms of COVID recently?\r\n" +
+                                  "If yes, please state the symptoms below.";
             // 
             // SubmitButton
             // 
@@ -172,6 +171,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.SubmitButton.TabIndex = 7;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // ResetForm2
             // 

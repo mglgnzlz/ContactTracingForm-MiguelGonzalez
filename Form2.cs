@@ -15,9 +15,10 @@ namespace ContactTracingForm_MiguelGonzalez
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Your response has been recorded! Thank you for answering!");
         }
     }
 }
