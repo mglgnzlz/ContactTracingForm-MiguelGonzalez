@@ -42,6 +42,8 @@ namespace ContactTracingForm_MiguelGonzalez
             this.Question3Box = new System.Windows.Forms.GroupBox();
             this.Q3_TextBox = new System.Windows.Forms.TextBox();
             this.Q3_Label = new System.Windows.Forms.Label();
+            this.SubmitButton = new System.Windows.Forms.Button();
+            this.ResetForm2 = new System.Windows.Forms.Button();
             this.Question1Box.SuspendLayout();
             this.Question2Box.SuspendLayout();
             this.Question3Box.SuspendLayout();
@@ -162,11 +164,31 @@ namespace ContactTracingForm_MiguelGonzalez
     "mptoms below.";
             this.Q3_Label.Click += new System.EventHandler(this.label1_Click);
             // 
+            // SubmitButton
+            // 
+            this.SubmitButton.Location = new System.Drawing.Point(255, 395);
+            this.SubmitButton.Name = "SubmitButton";
+            this.SubmitButton.Size = new System.Drawing.Size(75, 29);
+            this.SubmitButton.TabIndex = 7;
+            this.SubmitButton.Text = "Submit";
+            this.SubmitButton.UseVisualStyleBackColor = true;
+            // 
+            // ResetForm2
+            // 
+            this.ResetForm2.Location = new System.Drawing.Point(39, 395);
+            this.ResetForm2.Name = "ResetForm2";
+            this.ResetForm2.Size = new System.Drawing.Size(75, 29);
+            this.ResetForm2.TabIndex = 8;
+            this.ResetForm2.Text = "Reset Form";
+            this.ResetForm2.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(366, 436);
+            this.Controls.Add(this.ResetForm2);
+            this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.Question3Box);
             this.Controls.Add(this.Question2Box);
             this.Controls.Add(this.Question1Box);
@@ -174,6 +196,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.Controls.Add(this.BirthdayLabel);
             this.Controls.Add(this.AgeTextBox);
             this.Controls.Add(this.AgeLabel);
+            this.MaximizeBox = false;
             this.Name = "Form2";
             this.Text = "COVID Contact Tracing Form";
             this.Question1Box.ResumeLayout(false);
@@ -204,5 +227,7 @@ namespace ContactTracingForm_MiguelGonzalez
         private System.Windows.Forms.GroupBox Question3Box;
         private System.Windows.Forms.TextBox Q3_TextBox;
         private System.Windows.Forms.Label Q3_Label;
+        private System.Windows.Forms.Button SubmitButton;
+        private System.Windows.Forms.Button ResetForm2;
     }
 }
