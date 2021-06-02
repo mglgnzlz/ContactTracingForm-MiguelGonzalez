@@ -52,7 +52,16 @@ namespace ContactTracingForm_MiguelGonzalez
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.Q2_GroupBox = new System.Windows.Forms.GroupBox();
             this.Q1_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Ques1_Label = new System.Windows.Forms.Label();
+            this.Ques2_Label = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.Q2_GroupBox.SuspendLayout();
+            this.Q1_GroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // Name_Label
@@ -232,15 +241,19 @@ namespace ContactTracingForm_MiguelGonzalez
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.textBox5);
+            this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Location = new System.Drawing.Point(14, 202);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(293, 93);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Question # 1";
+            this.groupBox3.Text = "Question # 3";
             // 
             // Q2_GroupBox
             // 
+            this.Q2_GroupBox.Controls.Add(this.textBox4);
+            this.Q2_GroupBox.Controls.Add(this.Ques2_Label);
             this.Q2_GroupBox.Location = new System.Drawing.Point(14, 112);
             this.Q2_GroupBox.Name = "Q2_GroupBox";
             this.Q2_GroupBox.Size = new System.Drawing.Size(293, 86);
@@ -250,12 +263,63 @@ namespace ContactTracingForm_MiguelGonzalez
             // 
             // Q1_GroupBox
             // 
+            this.Q1_GroupBox.Controls.Add(this.textBox3);
+            this.Q1_GroupBox.Controls.Add(this.Ques1_Label);
             this.Q1_GroupBox.Location = new System.Drawing.Point(14, 22);
             this.Q1_GroupBox.Name = "Q1_GroupBox";
             this.Q1_GroupBox.Size = new System.Drawing.Size(293, 86);
             this.Q1_GroupBox.TabIndex = 0;
             this.Q1_GroupBox.TabStop = false;
             this.Q1_GroupBox.Text = "Question # 1";
+            // 
+            // Ques1_Label
+            // 
+            this.Ques1_Label.AutoSize = true;
+            this.Ques1_Label.Location = new System.Drawing.Point(8, 19);
+            this.Ques1_Label.Name = "Ques1_Label";
+            this.Ques1_Label.Size = new System.Drawing.Size(233, 30);
+            this.Ques1_Label.TabIndex = 0;
+            this.Ques1_Label.Text = "Do you have any history of travel recently? \r\nIf yes, where?\r\n";
+            // 
+            // Ques2_Label
+            // 
+            this.Ques2_Label.AutoSize = true;
+            this.Ques2_Label.Location = new System.Drawing.Point(8, 19);
+            this.Ques2_Label.Name = "Ques2_Label";
+            this.Ques2_Label.Size = new System.Drawing.Size(269, 30);
+            this.Ques2_Label.TabIndex = 1;
+            this.Ques2_Label.Text = "Have you experienced any symptoms of COVID19\r\nrecently? If yes, please state the " +
+    "symptoms below.\r\n";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(283, 30);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Have you been exposed to someone diagnosed with\r\nCOVID19 recently? \r\n";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(9, 53);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(279, 23);
+            this.textBox3.TabIndex = 1;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(9, 53);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(273, 23);
+            this.textBox4.TabIndex = 2;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(9, 55);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(270, 23);
+            this.textBox5.TabIndex = 3;
             // 
             // Form1
             // 
@@ -285,6 +349,12 @@ namespace ContactTracingForm_MiguelGonzalez
             this.Name = "Form1";
             this.Text = "COVID Contact Tracing Form";
             this.groupBox1.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.Q2_GroupBox.ResumeLayout(false);
+            this.Q2_GroupBox.PerformLayout();
+            this.Q1_GroupBox.ResumeLayout(false);
+            this.Q1_GroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,6 +385,12 @@ namespace ContactTracingForm_MiguelGonzalez
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox Q2_GroupBox;
         private System.Windows.Forms.GroupBox Q1_GroupBox;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label Ques2_Label;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label Ques1_Label;
     }
 }
 
