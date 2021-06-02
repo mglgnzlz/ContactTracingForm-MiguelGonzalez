@@ -77,7 +77,8 @@ namespace ContactTracingForm_MiguelGonzalez
         public void SubmitFunct()
         {
             StreamWriter ContTracForm;
-            ContTracForm = File.CreateText(@"D:\CARL\1User Files\Contact Tracing Form.txt");
+            ContTracForm = File.AppendText(@"D:\CARL\1User Files\Contact Tracing Form.txt");
+            ContTracForm.WriteLine("--------------------");
             ContTracForm.WriteLine(LastName.Text);
             ContTracForm.WriteLine(LastName_TextBox.Text);
             ContTracForm.WriteLine(FirstName.Text);
@@ -94,6 +95,7 @@ namespace ContactTracingForm_MiguelGonzalez
             ContTracForm.WriteLine(Q2_Tb.Text);
             ContTracForm.WriteLine(Ques3_Label.Text);
             ContTracForm.WriteLine(Q3_Tb.Text);
+            ContTracForm.WriteLine("--------------------");
             ContTracForm.Close();
         }
 
