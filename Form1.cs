@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ContactTracingForm_MiguelGonzalez
 {
@@ -42,6 +43,8 @@ namespace ContactTracingForm_MiguelGonzalez
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Your response has been recorded, thank you!");
+            SubmitFunct();
+            Application.Exit();
         }
 
         private void ResetButton_Click(object sender, EventArgs e)
@@ -69,6 +72,13 @@ namespace ContactTracingForm_MiguelGonzalez
             Q2_Tb.Text = "";
             Q3_Tb.Text = "";
             MessageBox.Show("The form is now reset!");
+        }
+
+        public void SubmitFunct()
+        {
+            StreamWriter ContTracForm;
+            ContTracForm = File.CreateText(@"D:\CARL\1User Files\Contact Tracing Form.txt");
+            ContTracForm.WriteLine("Test1");
         }
 
     }
