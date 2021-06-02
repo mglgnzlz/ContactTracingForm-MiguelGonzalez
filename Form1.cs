@@ -51,11 +51,11 @@ namespace ContactTracingForm_MiguelGonzalez
             HATb_Text = HomeAddress_TextBox.Text;
         }
 
+    
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("The form will now proceed to the next part.");
-            this.Hide();
         }
 
         private void ResetButton_Click(object sender, EventArgs e)

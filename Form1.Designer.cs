@@ -43,12 +43,22 @@ namespace ContactTracingForm_MiguelGonzalez
             this.ConfirmButton = new System.Windows.Forms.Button();
             this.ResetButton = new System.Windows.Forms.Button();
             this.NameDisp_TB = new System.Windows.Forms.TextBox();
+            this.Age_Label = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Birthday_Label = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.PersonalInfo_GB = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.Q2_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Q1_GroupBox = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Name_Label
             // 
             this.Name_Label.AutoSize = true;
-            this.Name_Label.Location = new System.Drawing.Point(13, 74);
+            this.Name_Label.Location = new System.Drawing.Point(39, 121);
             this.Name_Label.Name = "Name_Label";
             this.Name_Label.Size = new System.Drawing.Size(42, 15);
             this.Name_Label.TabIndex = 0;
@@ -57,7 +67,7 @@ namespace ContactTracingForm_MiguelGonzalez
             // LastName
             // 
             this.LastName.AutoSize = true;
-            this.LastName.Location = new System.Drawing.Point(37, 105);
+            this.LastName.Location = new System.Drawing.Point(63, 152);
             this.LastName.Name = "LastName";
             this.LastName.Size = new System.Drawing.Size(66, 15);
             this.LastName.TabIndex = 2;
@@ -65,7 +75,7 @@ namespace ContactTracingForm_MiguelGonzalez
             // 
             // LastName_TextBox
             // 
-            this.LastName_TextBox.Location = new System.Drawing.Point(109, 97);
+            this.LastName_TextBox.Location = new System.Drawing.Point(135, 144);
             this.LastName_TextBox.Name = "LastName_TextBox";
             this.LastName_TextBox.Size = new System.Drawing.Size(213, 23);
             this.LastName_TextBox.TabIndex = 3;
@@ -74,7 +84,7 @@ namespace ContactTracingForm_MiguelGonzalez
             // FirstName
             // 
             this.FirstName.AutoSize = true;
-            this.FirstName.Location = new System.Drawing.Point(37, 141);
+            this.FirstName.Location = new System.Drawing.Point(63, 188);
             this.FirstName.Name = "FirstName";
             this.FirstName.Size = new System.Drawing.Size(67, 15);
             this.FirstName.TabIndex = 4;
@@ -82,7 +92,7 @@ namespace ContactTracingForm_MiguelGonzalez
             // 
             // FirstName_TextBox
             // 
-            this.FirstName_TextBox.Location = new System.Drawing.Point(109, 133);
+            this.FirstName_TextBox.Location = new System.Drawing.Point(135, 180);
             this.FirstName_TextBox.Name = "FirstName_TextBox";
             this.FirstName_TextBox.Size = new System.Drawing.Size(213, 23);
             this.FirstName_TextBox.TabIndex = 5;
@@ -91,7 +101,7 @@ namespace ContactTracingForm_MiguelGonzalez
             // MiddleName
             // 
             this.MiddleName.AutoSize = true;
-            this.MiddleName.Location = new System.Drawing.Point(21, 174);
+            this.MiddleName.Location = new System.Drawing.Point(47, 221);
             this.MiddleName.Name = "MiddleName";
             this.MiddleName.Size = new System.Drawing.Size(82, 15);
             this.MiddleName.TabIndex = 6;
@@ -99,7 +109,7 @@ namespace ContactTracingForm_MiguelGonzalez
             // 
             // MiddleName_TextBox
             // 
-            this.MiddleName_TextBox.Location = new System.Drawing.Point(109, 166);
+            this.MiddleName_TextBox.Location = new System.Drawing.Point(135, 213);
             this.MiddleName_TextBox.Name = "MiddleName_TextBox";
             this.MiddleName_TextBox.Size = new System.Drawing.Size(213, 23);
             this.MiddleName_TextBox.TabIndex = 6;
@@ -108,7 +118,7 @@ namespace ContactTracingForm_MiguelGonzalez
             // ContactNumber
             // 
             this.ContactNumber.AutoSize = true;
-            this.ContactNumber.Location = new System.Drawing.Point(13, 212);
+            this.ContactNumber.Location = new System.Drawing.Point(39, 259);
             this.ContactNumber.Name = "ContactNumber";
             this.ContactNumber.Size = new System.Drawing.Size(99, 15);
             this.ContactNumber.TabIndex = 8;
@@ -116,16 +126,16 @@ namespace ContactTracingForm_MiguelGonzalez
             // 
             // ContactNumber_TextBox
             // 
-            this.ContactNumber_TextBox.Location = new System.Drawing.Point(118, 209);
+            this.ContactNumber_TextBox.Location = new System.Drawing.Point(144, 256);
             this.ContactNumber_TextBox.Name = "ContactNumber_TextBox";
-            this.ContactNumber_TextBox.Size = new System.Drawing.Size(213, 23);
+            this.ContactNumber_TextBox.Size = new System.Drawing.Size(204, 23);
             this.ContactNumber_TextBox.TabIndex = 9;
             this.ContactNumber_TextBox.TextChanged += new System.EventHandler(this.ContactNumber_TextBox_TextChanged);
             // 
             // HomeAddress
             // 
             this.HomeAddress.AutoSize = true;
-            this.HomeAddress.Location = new System.Drawing.Point(13, 241);
+            this.HomeAddress.Location = new System.Drawing.Point(39, 288);
             this.HomeAddress.Name = "HomeAddress";
             this.HomeAddress.Size = new System.Drawing.Size(88, 15);
             this.HomeAddress.TabIndex = 10;
@@ -133,15 +143,15 @@ namespace ContactTracingForm_MiguelGonzalez
             // 
             // HomeAddress_TextBox
             // 
-            this.HomeAddress_TextBox.Location = new System.Drawing.Point(118, 238);
+            this.HomeAddress_TextBox.Location = new System.Drawing.Point(144, 285);
             this.HomeAddress_TextBox.Name = "HomeAddress_TextBox";
-            this.HomeAddress_TextBox.Size = new System.Drawing.Size(213, 23);
+            this.HomeAddress_TextBox.Size = new System.Drawing.Size(204, 23);
             this.HomeAddress_TextBox.TabIndex = 11;
             this.HomeAddress_TextBox.TextChanged += new System.EventHandler(this.HomeAddress_TextBox_TextChanged);
             // 
             // ConfirmButton
             // 
-            this.ConfirmButton.Location = new System.Drawing.Point(247, 335);
+            this.ConfirmButton.Location = new System.Drawing.Point(619, 335);
             this.ConfirmButton.Name = "ConfirmButton";
             this.ConfirmButton.Size = new System.Drawing.Size(75, 23);
             this.ConfirmButton.TabIndex = 12;
@@ -162,16 +172,101 @@ namespace ContactTracingForm_MiguelGonzalez
             // NameDisp_TB
             // 
             this.NameDisp_TB.Enabled = false;
-            this.NameDisp_TB.Location = new System.Drawing.Point(61, 66);
+            this.NameDisp_TB.Location = new System.Drawing.Point(87, 113);
             this.NameDisp_TB.Name = "NameDisp_TB";
             this.NameDisp_TB.Size = new System.Drawing.Size(261, 23);
             this.NameDisp_TB.TabIndex = 14;
+            // 
+            // Age_Label
+            // 
+            this.Age_Label.AutoSize = true;
+            this.Age_Label.Location = new System.Drawing.Point(39, 83);
+            this.Age_Label.Name = "Age_Label";
+            this.Age_Label.Size = new System.Drawing.Size(31, 15);
+            this.Age_Label.TabIndex = 15;
+            this.Age_Label.Text = "Age:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(68, 75);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(62, 23);
+            this.textBox1.TabIndex = 16;
+            // 
+            // Birthday_Label
+            // 
+            this.Birthday_Label.AutoSize = true;
+            this.Birthday_Label.Location = new System.Drawing.Point(155, 83);
+            this.Birthday_Label.Name = "Birthday_Label";
+            this.Birthday_Label.Size = new System.Drawing.Size(54, 15);
+            this.Birthday_Label.TabIndex = 17;
+            this.Birthday_Label.Text = "Birthday:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(209, 75);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(62, 23);
+            this.textBox2.TabIndex = 18;
+            // 
+            // PersonalInfo_GB
+            // 
+            this.PersonalInfo_GB.Location = new System.Drawing.Point(37, 28);
+            this.PersonalInfo_GB.Name = "PersonalInfo_GB";
+            this.PersonalInfo_GB.Size = new System.Drawing.Size(321, 301);
+            this.PersonalInfo_GB.TabIndex = 19;
+            this.PersonalInfo_GB.TabStop = false;
+            this.PersonalInfo_GB.Text = "Personal Info Section";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.groupBox3);
+            this.groupBox1.Controls.Add(this.Q2_GroupBox);
+            this.groupBox1.Controls.Add(this.Q1_GroupBox);
+            this.groupBox1.Location = new System.Drawing.Point(373, 28);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(321, 301);
+            this.groupBox1.TabIndex = 20;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Questions";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Location = new System.Drawing.Point(14, 202);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(293, 93);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Question # 1";
+            // 
+            // Q2_GroupBox
+            // 
+            this.Q2_GroupBox.Location = new System.Drawing.Point(14, 112);
+            this.Q2_GroupBox.Name = "Q2_GroupBox";
+            this.Q2_GroupBox.Size = new System.Drawing.Size(293, 86);
+            this.Q2_GroupBox.TabIndex = 1;
+            this.Q2_GroupBox.TabStop = false;
+            this.Q2_GroupBox.Text = "Question # 2";
+            // 
+            // Q1_GroupBox
+            // 
+            this.Q1_GroupBox.Location = new System.Drawing.Point(14, 22);
+            this.Q1_GroupBox.Name = "Q1_GroupBox";
+            this.Q1_GroupBox.Size = new System.Drawing.Size(293, 86);
+            this.Q1_GroupBox.TabIndex = 0;
+            this.Q1_GroupBox.TabStop = false;
+            this.Q1_GroupBox.Text = "Question # 1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(366, 390);
+            this.ClientSize = new System.Drawing.Size(738, 390);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Birthday_Label);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Age_Label);
             this.Controls.Add(this.NameDisp_TB);
             this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.ConfirmButton);
@@ -186,8 +281,10 @@ namespace ContactTracingForm_MiguelGonzalez
             this.Controls.Add(this.LastName_TextBox);
             this.Controls.Add(this.LastName);
             this.Controls.Add(this.Name_Label);
+            this.Controls.Add(this.PersonalInfo_GB);
             this.Name = "Form1";
             this.Text = "COVID Contact Tracing Form";
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,6 +306,15 @@ namespace ContactTracingForm_MiguelGonzalez
         private System.Windows.Forms.Button ConfirmButton;
         private System.Windows.Forms.Button ResetButton;
         private System.Windows.Forms.TextBox NameDisp_TB;
+        private System.Windows.Forms.Label Age_Label;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label Birthday_Label;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.GroupBox PersonalInfo_GB;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox Q2_GroupBox;
+        private System.Windows.Forms.GroupBox Q1_GroupBox;
     }
 }
 
