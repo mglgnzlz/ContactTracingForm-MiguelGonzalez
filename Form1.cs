@@ -56,8 +56,6 @@ namespace ContactTracingForm_MiguelGonzalez
         {
             MessageBox.Show("The form will now proceed to the next part.");
             this.Hide();
-            Form2 form2 = new Form2();
-            form2.ShowDialog();
         }
 
         private void ResetButton_Click(object sender, EventArgs e)
