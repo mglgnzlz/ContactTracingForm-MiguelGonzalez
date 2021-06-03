@@ -18,12 +18,15 @@ namespace ContactTracingForm_MiguelGonzalez
 
         private void CloseButton_Click(object sender, EventArgs e)
         {
+            //Closes Form2 when close button is clicked
             this.Close();
         }
 
         private void FileDisplay_TextChanged(object sender, EventArgs e)
         {
             StreamReader ContTractFormRead;
+           
+            //Reads file in selected directory(*manually coded*)
             ContTractFormRead = File.OpenText(@"D:\CARL\1User Files\Contact Tracing Form.txt");
             while (!ContTractFormRead.EndOfStream)
             {

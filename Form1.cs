@@ -24,7 +24,9 @@ namespace ContactTracingForm_MiguelGonzalez
 
         private void LastName_TextBox_TextChanged(object sender, EventArgs e)
         {
+          //Assigns LastName_TextBox.Text value to LNTb_Text
            LNTb_Text = LastName_TextBox.Text;
+          //Updates the last name part in the ChangeName_Disp
            ChangeName_Disp();
         }
         private void FirstName_TextBox_TextChanged(object sender, EventArgs e)
@@ -43,6 +45,7 @@ namespace ContactTracingForm_MiguelGonzalez
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Your response has been recorded, thank you!");
+            //Calls submit function
             SubmitFunct();
         }
 
@@ -55,11 +58,13 @@ namespace ContactTracingForm_MiguelGonzalez
 
         public void ChangeName_Disp ()
         {
+            //Updates NameDisp_TB.Text value to whatever the user enters in the Name section.
             NameDisp_TB.Text = LNTb_Text + ", " + FNTb_Text + ", " + MNTb_Text;
         }
 
         private void ResetForm_Disp ()
         {
+            //Clears the string inside the boxes where the user fills in information.
             LastName_TextBox.Text = "";
             FirstName_TextBox.Text = "";
             MiddleName_TextBox.Text = "";
@@ -78,11 +83,14 @@ namespace ContactTracingForm_MiguelGonzalez
 
             MessageBox.Show("Once the dialog pops up, press any button to show the file");
             Form2 Frm2 = new Form2();
+
+            //Shows Form2 which will read the output file of the user.
             Frm2.Show();
         }
 
         private void SubmitFunct()
         {
+            //Outputs file into selected directory (*manually coded*)
             StreamWriter ContTracForm;
             ContTracForm = File.AppendText(@"D:\CARL\1User Files\Contact Tracing Form.txt");
             ContTracForm.WriteLine("--------------------");
