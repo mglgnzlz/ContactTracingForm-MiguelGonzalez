@@ -76,7 +76,7 @@ namespace ContactTracingForm_MiguelGonzalez
         private void ReadFile_Button_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show("Once the dialog pops up, press the Read button again to show the file");
+            MessageBox.Show("Once the dialog pops up, press any button to show the file");
             Form2 Frm2 = new Form2();
             Frm2.Show();
         }
@@ -96,6 +96,8 @@ namespace ContactTracingForm_MiguelGonzalez
             ContTracForm.WriteLine(Age_Tb.Text);
             ContTracForm.WriteLine(Birthday_Label.Text);
             ContTracForm.WriteLine(Birthday_Tb.Text);
+            ContTracForm.WriteLine(ContactNumber.Text);
+            ContTracForm.WriteLine(ContactNumber_TextBox.Text);
             ContTracForm.WriteLine(Ques1_Label.Text);
             ContTracForm.WriteLine(Q1_Tb.Text);
             ContTracForm.WriteLine(Ques2_Label.Text);

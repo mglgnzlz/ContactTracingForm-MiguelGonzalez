@@ -16,8 +16,12 @@ namespace ContactTracingForm_MiguelGonzalez
             InitializeComponent();
         }
 
-           
-        private void ReadButton_Click(object sender, EventArgs e)
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FileDisplay_TextChanged(object sender, EventArgs e)
         {
             StreamReader ContTractFormRead;
             ContTractFormRead = File.OpenText(@"D:\CARL\1User Files\Contact Tracing Form.txt");
@@ -25,11 +29,6 @@ namespace ContactTracingForm_MiguelGonzalez
             {
                 FileDisplay.Text = (ContTractFormRead.ReadToEnd());
             }
-        }
-
-        private void CloseButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
