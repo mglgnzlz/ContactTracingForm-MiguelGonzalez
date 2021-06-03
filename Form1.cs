@@ -44,7 +44,6 @@ namespace ContactTracingForm_MiguelGonzalez
         {
             MessageBox.Show("Your response has been recorded, thank you!");
             SubmitFunct();
-            Application.Exit();
         }
 
         private void ResetButton_Click(object sender, EventArgs e)
