@@ -60,6 +60,7 @@ namespace ContactTracingForm_MiguelGonzalez
             this.Ques2_Label = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ReadFile_Button = new System.Windows.Forms.Button();
             this.PersonalInfo_GB.SuspendLayout();
             this.Questions_GB.SuspendLayout();
             this.Q1_GroupBox.SuspendLayout();
@@ -339,11 +340,22 @@ namespace ContactTracingForm_MiguelGonzalez
             this.label1.Size = new System.Drawing.Size(100, 23);
             this.label1.TabIndex = 0;
             // 
+            // ReadFile_Button
+            // 
+            this.ReadFile_Button.Location = new System.Drawing.Point(310, 335);
+            this.ReadFile_Button.Name = "ReadFile_Button";
+            this.ReadFile_Button.Size = new System.Drawing.Size(110, 23);
+            this.ReadFile_Button.TabIndex = 23;
+            this.ReadFile_Button.Text = "Read";
+            this.ReadFile_Button.UseVisualStyleBackColor = true;
+            this.ReadFile_Button.Click += new System.EventHandler(this.ReadFile_Button_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 390);
+            this.Controls.Add(this.ReadFile_Button);
             this.Controls.Add(this.Questions_GB);
             this.Controls.Add(this.Birthday_Label);
             this.Controls.Add(this.Age_Label);
@@ -411,6 +423,7 @@ namespace ContactTracingForm_MiguelGonzalez
         private System.Windows.Forms.GroupBox Q1_GroupBox;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button ReadFile_Button;
     }
 }
 

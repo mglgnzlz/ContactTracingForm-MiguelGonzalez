@@ -59,7 +59,7 @@ namespace ContactTracingForm_MiguelGonzalez
             NameDisp_TB.Text = LNTb_Text + ", " + FNTb_Text + ", " + MNTb_Text;
         }
 
-        public void ResetForm_Disp ()
+        private void ResetForm_Disp ()
         {
             LastName_TextBox.Text = "";
             FirstName_TextBox.Text = "";
@@ -74,7 +74,15 @@ namespace ContactTracingForm_MiguelGonzalez
             MessageBox.Show("The form is now reset!");
         }
 
-        public void SubmitFunct()
+        private void ReadFile_Button_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("Once the dialog pops up, press the Read button again to show the file");
+            Form2 Frm2 = new Form2();
+            Frm2.Show();
+        }
+
+        private void SubmitFunct()
         {
             StreamWriter ContTracForm;
             ContTracForm = File.AppendText(@"D:\CARL\1User Files\Contact Tracing Form.txt");
@@ -98,6 +106,7 @@ namespace ContactTracingForm_MiguelGonzalez
             ContTracForm.WriteLine("--------------------");
             ContTracForm.Close();
         }
+
 
     }
 }
