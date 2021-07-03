@@ -55,6 +55,19 @@ namespace ContactTracingForm_MiguelGonzalez
             ResetForm_Disp();
         }
 
+        private void ReadFile_Button_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("Once the dialog pops up, press any button to show the file");
+            Form2 Frm2 = new Form2();
+
+            //Shows Form2 which will read the output file of the user.
+            Frm2.Show();
+        }
+
+
+
+        //FUNCTIONS//
 
         public void ChangeName_Disp ()
         {
@@ -78,15 +91,6 @@ namespace ContactTracingForm_MiguelGonzalez
             MessageBox.Show("The form is now reset!");
         }
 
-        private void ReadFile_Button_Click(object sender, EventArgs e)
-        {
-
-            MessageBox.Show("Once the dialog pops up, press any button to show the file");
-            Form2 Frm2 = new Form2();
-
-            //Shows Form2 which will read the output file of the user.
-            Frm2.Show();
-        }
 
         private void SubmitFunct()
         {
